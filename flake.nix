@@ -33,11 +33,11 @@
     args = {inherit inputs outputs lib;};
 
     # Define main user
-    mainUser = "konsti";
+    mainUser = "jogius";
 
     # List of all hosts for each platform
     systems = {
-      x86_64-linux = [(import ./hosts/snow args)];
+      x86_64-linux = [(import ./hosts/sus args)];
     };
 
     # Transform into datastructure for nixosConfiguration

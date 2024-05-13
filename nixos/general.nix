@@ -45,12 +45,7 @@
   # nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
-      "android-studio-stable"
       "discord"
-      "steam"
-      "steam-original"
-      "steam-run"
-      "zerotierone"
     ];
 
   nixpkgs.overlays = [
@@ -62,7 +57,7 @@
   # ========
 
   environment.systemPackages = with pkgs; [
-    vim
+    nvim
     nano
 
     file
@@ -76,20 +71,9 @@
     btop
     fastfetch
   ];
-  security.doas.enable = true;
-  security.sudo.enable = false;
-  security.doas.extraRules = [
-    {
-      users = [host.mainUser];
-      keepEnv = true;
-      persist = true;
-    }
-  ];
   environment.shellAliases = {
-    ls = "eza";
+    /*ls = "eza";
     ll = "eza -l";
-    l = "eza -la";
-    sudo = "doas";
-    neofetch = "fastfetch";
+    l = "eza -la";*/
   };
 }

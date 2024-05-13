@@ -76,17 +76,17 @@
   # git config
   programs.git = {
     enable = true;
-    userName = "konsti219";
-    userEmail = "37149441+konsti219@users.noreply.github.com";
-    signing = {
+    userName = "Julius Makowski";
+    userEmail = "julius@themakowskis.de";
+    /*signing = {
       signByDefault = true;
       key = "65C10FB5A2BF4E55";
-    };
+    };*/
     extraConfig = {
       core.editor = "codium --wait";
       credential = {
-        "https://github.com".helper = "!/home/konsti/.nix-profile/bin/gh auth git-credential";
-        "https://gist.github.com".helper = "!/home/konsti/.nix-profile/bin/gh auth git-credential";
+        "https://github.com".helper = "!/home/jogius/.nix-profile/bin/gh auth git-credential";
+        "https://gist.github.com".helper = "!/home/jogius/.nix-profile/bin/gh auth git-credential";
       };
       url = {
         "https://github.com/".insteadof = "git@github.com:";

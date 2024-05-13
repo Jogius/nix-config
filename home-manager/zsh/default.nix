@@ -1,15 +1,10 @@
 # Configure zsh
 {pkgs, ...}: {
   home.shellAliases = {
-    # anti-prank prank
+    /*# anti-prank prank
     vi = "loginctl lock-session #";
     vim = "loginctl lock-session #";
-    nvim = "loginctl lock-session #";
-
-    # TODO: depuplicate from nixos/general.nix
-    ls = "eza";
-    ll = "eza -l";
-    l = "eza -la";
+    nvim = "loginctl lock-session #";*/
   };
   programs.bash.enable = true;
   programs.zsh = {
@@ -32,8 +27,6 @@
       fi
 
       source ${./.p10k.zsh}
-
-      export PATH="$PATH:$HOME/.cargo/bin"
     '';
 
     oh-my-zsh = {
