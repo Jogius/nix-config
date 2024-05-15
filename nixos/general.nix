@@ -57,8 +57,10 @@
   # ========
 
   environment.systemPackages = with pkgs; [
-    nvim
+    neovim
     nano
+
+    firefox
 
     file
     eza
@@ -72,8 +74,10 @@
     fastfetch
   ];
   environment.shellAliases = {
-    /*ls = "eza";
+    /*
+      ls = "eza";
     ll = "eza -l";
-    l = "eza -la";*/
+    l = "eza -la";
+    */
   };
 }

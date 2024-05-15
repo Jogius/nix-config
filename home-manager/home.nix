@@ -51,23 +51,24 @@
       yubikey-manager-qt
 
       # Dev tools
-      android-studio
       (hiPrio clang)
       clang-tools
       gcc
       gnumake
-      rustup
-      gh
 
       # Creative tools
       blender
       gimp
-      orca-slicer
 
       # Other software
       pkgs.discord
-      prismlauncher
-      superTuxKart
+
+      jetbrains.clion
+      jetbrains.idea-ultimate
+      jetbrains.pycharm-professional
+      jetbrains.gateway
+      jetbrains.rust-rover
+      alacritty
     ])
     ++ (with pkgs; [
       yakuake
@@ -78,20 +79,13 @@
     enable = true;
     userName = "Julius Makowski";
     userEmail = "julius@themakowskis.de";
-    /*signing = {
+    /*
+      signing = {
       signByDefault = true;
       key = "65C10FB5A2BF4E55";
-    };*/
+    };
+    */
     extraConfig = {
-      core.editor = "codium --wait";
-      credential = {
-        "https://github.com".helper = "!/home/jogius/.nix-profile/bin/gh auth git-credential";
-        "https://gist.github.com".helper = "!/home/jogius/.nix-profile/bin/gh auth git-credential";
-      };
-      url = {
-        "https://github.com/".insteadof = "git@github.com:";
-        "https://".insteadof = "git://";
-      };
       init.defaultbranch = "main";
     };
   };

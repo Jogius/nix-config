@@ -37,7 +37,7 @@
 
     # List of all hosts for each platform
     systems = {
-      x86_64-linux = [(import ./hosts/sus args)];
+      x86_64-linux = [(import ./hosts/jogius-laptop args)];
     };
 
     # Transform into datastructure for nixosConfiguration

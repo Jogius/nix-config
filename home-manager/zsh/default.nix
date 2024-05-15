@@ -1,10 +1,12 @@
 # Configure zsh
 {pkgs, ...}: {
   home.shellAliases = {
-    /*# anti-prank prank
+    /*
+      # anti-prank prank
     vi = "loginctl lock-session #";
     vim = "loginctl lock-session #";
-    nvim = "loginctl lock-session #";*/
+    nvim = "loginctl lock-session #";
+    */
   };
   programs.bash.enable = true;
   programs.zsh = {
@@ -26,7 +28,7 @@
         source "$\{XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-$\{(%):-%n}.zsh"
       fi
 
-      source ${./.p10k.zsh}
+      source ${./p10k.zsh}
     '';
 
     oh-my-zsh = {
