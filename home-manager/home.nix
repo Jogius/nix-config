@@ -59,6 +59,7 @@
       # Creative tools
       blender
       gimp
+      pkgs.unstable.kicad
 
       # Other software
       pkgs.discord
@@ -66,9 +67,22 @@
       jetbrains.clion
       jetbrains.idea-ultimate
       jetbrains.pycharm-professional
-      jetbrains.gateway
+      /*jetbrains.gateway*/
       jetbrains.rust-rover
+      jetbrains.webstorm
       alacritty
+
+      # Chats
+      telegram-desktop
+      whatsapp-for-linux
+      signal-desktop
+
+      # WebDev
+      nodejs
+      yarn
+      python3
+
+      chromium
     ])
     ++ (with pkgs; [
       yakuake
