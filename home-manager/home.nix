@@ -17,6 +17,10 @@
     (with pkgs.unstable; [
       neofetch
 
+      stdenv.cc.cc
+      zlib
+      openssl
+
       # Utils
       nnn
       zip
@@ -67,7 +71,9 @@
       jetbrains.clion
       jetbrains.idea-ultimate
       jetbrains.pycharm-professional
-      /*jetbrains.gateway*/
+      /*
+      jetbrains.gateway
+      */
       jetbrains.rust-rover
       jetbrains.webstorm
       alacritty
@@ -83,6 +89,10 @@
       python3
 
       chromium
+
+      pkgs.unityhub
+      jetbrains.rider
+      msbuild # Rider dependency
     ])
     ++ (with pkgs; [
       yakuake

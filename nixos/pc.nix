@@ -74,8 +74,16 @@
   environment.systemPackages = with pkgs; [
     firefox
     thunderbird
-    unstable.vscodium
+    vscode
+    qemu
+    quickemu
     unstable.nil
+    virtualbox
+    docker
+    mono
+    dotnet-sdk
+    gcc
+    unstable.orca-slicer
   ];
   hardware.opengl.enable = true;
 }

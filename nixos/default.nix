@@ -7,4 +7,5 @@
   locale = import ./locale.nix;
   pc = import ./pc.nix;
   plasma-xorg = import ./plasma-xorg.nix;
+  virtualisation = import ./virtualisation.nix;
 }

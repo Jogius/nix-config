@@ -42,11 +42,11 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # The only unfree packages allowed are listed here.
-  # nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [
-      "discord"
-    ];
+  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfreePredicate = pkg:
+  #   builtins.elem (lib.getName pkg) [
+  #     "discord"
+  #   ];
 
   nixpkgs.overlays = [
     outputs.overlays.unstable-packages

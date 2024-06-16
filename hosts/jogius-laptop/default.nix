@@ -8,6 +8,7 @@
   modules =
     [
       ./hardware-configuration.nix
+      ./nvidia.nix
       ({...}: {
         boot.loader.systemd-boot.enable = true;
         boot.loader.efi.canTouchEfiVariables = true;
