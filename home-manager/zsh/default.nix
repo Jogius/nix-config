@@ -14,7 +14,9 @@
     history.size = 16384;
 
     enableCompletion = true;
-    enableAutosuggestions = true;
+    autosuggestion = {
+      enable = true;
+    };
 
     plugins = [
       {
@@ -29,6 +31,8 @@
       fi
 
       source ${./p10k.zsh}
+
+      source ${./alias.zsh}
     '';
 
     oh-my-zsh = {

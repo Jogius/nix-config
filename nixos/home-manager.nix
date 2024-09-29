@@ -18,7 +18,7 @@
   # Define main user account
   users.users.${host.mainUser} = {
     isNormalUser = true;
-    extraGroups = ["wheel"];
+    extraGroups = ["wheel" "vboxusers"];
     shell = pkgs.zsh;
   };
   programs.zsh.enable = true;

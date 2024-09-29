@@ -14,6 +14,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   # For better interop
   boot.supportedFilesystems = ["ntfs"];
+  boot.kernelModules = [ "kvm-intel" ];
 
   # ==========
   # Networking
@@ -61,6 +62,8 @@
     nano
 
     firefox
+
+    virtualbox
 
     file
     eza

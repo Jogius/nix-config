@@ -76,6 +76,9 @@
       */
       jetbrains.rust-rover
       jetbrains.webstorm
+      jetbrains.rider
+      msbuild # Rider dependency
+
       alacritty
 
       # Chats
@@ -91,8 +94,9 @@
       chromium
 
       pkgs.unityhub
-      jetbrains.rider
-      msbuild # Rider dependency
+      anki-bin
+      libreoffice
+
     ])
     ++ (with pkgs; [
       yakuake
