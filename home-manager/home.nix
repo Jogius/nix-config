@@ -72,13 +72,12 @@
       telegram-desktop
       whatsapp-for-linux
       signal-desktop
-
-
-
+      slack
+      discord
 
       yakuake
-      discord
-      slack
+
+      localsend
     ]);
 
   # git config
