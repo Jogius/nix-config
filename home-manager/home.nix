@@ -71,6 +71,7 @@
       jetbrains.clion
       jetbrains.idea-ultimate
       jetbrains.pycharm-professional
+      android-studio
       /*
       jetbrains.gateway
       */
