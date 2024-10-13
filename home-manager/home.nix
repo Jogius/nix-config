@@ -15,6 +15,8 @@
   # Packages that should be installed to the user profile.
   home.packages =
     (with pkgs.unstable; [
+    ])
+    ++ (with pkgs; [
       neofetch
 
       stdenv.cc.cc
@@ -59,26 +61,10 @@
       clang-tools
       gcc
       gnumake
-
       # Creative tools
       blender
       gimp
-      pkgs.unstable.kicad
-
-      # Other software
-      pkgs.discord
-
-      jetbrains.clion
-      jetbrains.idea-ultimate
-      jetbrains.pycharm-professional
-      android-studio
-      /*
-      jetbrains.gateway
-      */
-      jetbrains.rust-rover
-      jetbrains.webstorm
-      jetbrains.rider
-      msbuild # Rider dependency
+      kicad
 
       alacritty
 
@@ -87,20 +73,12 @@
       whatsapp-for-linux
       signal-desktop
 
-      # WebDev
-      nodejs
-      yarn
-      python3
 
-      chromium
 
-      pkgs.unityhub
-      anki-bin
-      libreoffice
 
-    ])
-    ++ (with pkgs; [
       yakuake
+      discord
+      slack
     ]);
 
   # git config
