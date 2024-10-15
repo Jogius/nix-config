@@ -70,6 +70,7 @@
     wget
     tree
     git
+    git-lfs
     alejandra
 
     htop
