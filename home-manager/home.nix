@@ -61,6 +61,7 @@
       clang-tools
       gcc
       gnumake
+      rustup
       # Creative tools
       blender
       gimp

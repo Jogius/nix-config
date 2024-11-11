@@ -63,8 +63,6 @@
 
     firefox
 
-    virtualbox
-
     file
     eza
     wget

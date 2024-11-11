@@ -26,3 +26,6 @@ runcpp() {
     ./"$filename" "$@"
 }
 
+alias kali="VirtualBoxVM --startvm kali"
+alias squeak="nix run /home/jogius/Documents/hpi-studies/WiSe_24_25/SWA/squeak/#squeak"
+

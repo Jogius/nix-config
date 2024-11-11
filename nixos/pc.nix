@@ -78,7 +78,6 @@
     qemu
     quickemu
     unstable.nil
-    virtualbox
     docker
     mono
     dotnet-sdk

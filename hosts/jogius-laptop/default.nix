@@ -24,5 +24,7 @@
       plasma-xorg
       pc
       locale
+      virtualisation
+      auth
     ]);
 }
