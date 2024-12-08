@@ -6,7 +6,7 @@
     # currentDir.url = ".";
 
     # Stable 24.05 NixOS/nixpkgs
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
 
     # Unstable NixOS/nixpkgs
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -16,7 +16,7 @@
 
     # Home Manger GitHub repo
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs-stable";
     };
   };
