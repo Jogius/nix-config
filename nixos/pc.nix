@@ -4,12 +4,6 @@
   inputs,
   ...
 }: {
-  # Enable sound.
-  hardware.pulseaudio = {
-    enable = true;
-    support32Bit = true;
-  };
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -81,7 +75,7 @@
     mono
     dotnet-sdk
     gcc
-    unstable.orca-slicer
+    orca-slicer
     wineWowPackages.stable
     winetricks
   ];
