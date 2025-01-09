@@ -79,6 +79,8 @@
       yakuake
 
       localsend
+
+      steam-run
     ]);
 
   # git config
