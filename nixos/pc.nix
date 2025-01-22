@@ -66,6 +66,7 @@
   # General Desktop software
   environment.systemPackages = with pkgs; [
     firefox
+    chromium
     thunderbird
     vscode
     qemu

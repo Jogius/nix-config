@@ -62,6 +62,10 @@
       gcc
       gnumake
       rustup
+      jetbrains.pycharm-professional
+      conda
+      python3
+
       # Creative tools
       blender
       gimp
